@@ -8,7 +8,7 @@ FluidForge.crusheritem =
     icon_size=64, -- This relates to the size expected by the game for the icon you provide, it is always a square by default so 64 is 64x64 
                   -- and the game will not load with a differnt icon size to the acutal size of the icon.
     tint = {r = 0.34, g = 0.9, b = 0.81}, -- This is the tint that is applied to the item when in the world
-    icon = "__base__/graphics/assembling-machine-1.png", -- This is the file path to the sprite of the icon, __modId__ relates to the root mod folder.
+    icon = "__base__/graphics/icons/assembling-machine-1.png", -- This is the file path to the sprite of the icon, __modId__ relates to the root mod folder.
     subgroup = "sarah-products",
     place_result = "crusher",
 }
@@ -18,6 +18,7 @@ FluidForge.crusherbuilding =
     type= "assembling-machine",
     icon = "__base__/graphics/assembling-machine-1.png",
     icon_size = 64,
+    crafting_categories = {"basic-crafting"},
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 1, result = "crusher" },
     fast_replaceable_group = "crusher",
@@ -71,7 +72,7 @@ FluidForge.crusherbuilding =
     }
 }
 
-local recipe = table.deepcopy(data.raw["recipe"]["assembling-machine"]) -- Copy the recipe table so I do not have to make the defaults
+local recipe = table.deepcopy(data.raw["recipe"]["heavy-armor"]) -- Copy the recipe table so I do not have to make the defaults
     recipe.enabled = true -- governs when the recipe is enabled or not
     recipe.name = "crusher" -- name of the recipe
      recipe.ingredients = {{"copper-plate",200},{"steel-plate",50}} -- What the recipe costs
