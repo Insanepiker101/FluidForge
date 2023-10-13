@@ -18,5 +18,6 @@ data:extend({
 
 
 require("item")
-require("prototypes.niter")
-require("prototypes.fire-armor")
+require("prototypes.items.niter")
+require("prototypes.items.fire-armor")
+require("prototypes.buildings.crusher")
