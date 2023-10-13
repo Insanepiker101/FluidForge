@@ -6,7 +6,7 @@
         {
             "label": "Prebuild",
             "type": "shell",
-            "command": "xcopy 'C:\\Users\\caila\\Desktop\\Programming\\Factorio Mods\\FluidForge\\FluidForge' C:\\Users\\caila\\AppData\\Roaming\\Factorio\\mods\\FluidForge /y /v",
+            "command": "xcopy 'C:\\Users\\caila\\Desktop\\Programming\\Factorio Mods\\FluidForge\\FluidForge' C:\\Users\\caila\\AppData\\Roaming\\Factorio\\mods\\FluidForge /y /v /s",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
