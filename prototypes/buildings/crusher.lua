@@ -5,10 +5,10 @@ FluidForge.crusheritem =
     name = "crusher", -- Name of the item
     type = "item", -- Type of the item
     stack_size=20, -- Stack size of the item
-    icon_size=64, -- This relates to the size expected by the game for the icon you provide, it is always a square by default so 64 is 64x64 
+    icon_size=128, -- This relates to the size expected by the game for the icon you provide, it is always a square by default so 64 is 64x64 
                   -- and the game will not load with a differnt icon size to the acutal size of the icon.
     tint = {r = 0.34, g = 0.9, b = 0.81}, -- This is the tint that is applied to the item when in the world
-    icon = "__base__/graphics/icons/assembling-machine-1.png", -- This is the file path to the sprite of the icon, __modId__ relates to the root mod folder.
+    icon = "__FluidForge__/ImageSource/items/crusher.png", -- This is the file path to the sprite of the icon, __modId__ relates to the root mod folder.
     subgroup = "sarah-products",
     place_result = "crusher",
 }
@@ -16,8 +16,8 @@ FluidForge.crusherbuilding =
 {
     name = "crusher",
     type= "assembling-machine",
-    icon = "__base__/graphics/assembling-machine-1.png",
-    icon_size = 64,
+    icon = "__FluidForge__/ImageSource/items/crusher.png",
+    icon_size = 128,
     crafting_categories = {"basic-crafting"},
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 1, result = "crusher" },
@@ -42,10 +42,10 @@ FluidForge.crusherbuilding =
       animation = {
         layers = {
           {
-            filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
+            filename = "__FluidForge__/ImageSource/buildings/crusher.png",
             priority = "high",
-            width = 71,
-            height = 87,
+            width = 128,
+            height = 128,
             line_length = 4,
             frame_count = 4,
             animation_speed = 0.5,
@@ -54,8 +54,8 @@ FluidForge.crusherbuilding =
           {
           filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
           priority = "high",
-          width = 93,
-          height = 51,
+          width = 128,
+          height = 128,
           repeat_count = 4,
           animation_speed = 0.5,
           draw_as_shadow = true,
