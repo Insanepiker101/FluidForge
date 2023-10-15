@@ -2,6 +2,9 @@
 if not FluidForge then
     FluidForge = {}
 end
+FluidForge.items = {}
+FluidForge.buildings = {}
+FluidForge.recipes = {}
 data:extend({
     {
       type = "item-subgroup",
@@ -19,5 +22,6 @@ data:extend({
 
 require("item")
 require("prototypes.items.niter")
-require("prototypes.items.fire-armor")
 require("prototypes.buildings.crusher")
+require("prototypes.recipes.niter-recipe")
+require("prototype_init")

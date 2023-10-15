@@ -1,6 +1,6 @@
 -- This is the prototype file for the item niter
 -- Create the niter object in the table FluidForge, this object will be used to append to the main process using data:extend 
-FluidForge.niter = 
+FluidForge.items.niter = 
 {
     name = "niter", -- Name of the item
     type = "item", -- Type of the item
@@ -17,4 +17,4 @@ recipe.name = "niter" -- name of the recipe
  recipe.ingredients = {{"copper-plate",200},{"steel-plate",50}} -- What the recipe costs
 recipe.result = "niter" -- This returns the item id of the item the recipe is to make
 
-data:extend{FluidForge.niter,recipe} -- This inserts the data into the prototypes phase of game loading
+data:extend{FluidForge.items.niter,recipe} -- This inserts the data into the prototypes phase of game loading

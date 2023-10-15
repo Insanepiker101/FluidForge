@@ -24,9 +24,9 @@ FluidForge.crusherbuilding =
     fast_replaceable_group = "crusher",
     max_health = 300,
     dying_explosion = "medium-explosion",
-    collision_box = { { -0, -0 }, { 0, 0 } },
-    selection_box = { { -0, -0 }, { 0, 0 } },
-    drawing_box = { { -0, -0 }, { 0, 0 } },
+    collision_box = { { -2, -3 }, { 2, 3 } },
+    selection_box = { { -2, -3 }, { 2, 3 } },
+    drawing_box = { { -2, -3 }, { 2, 3 } },
     module_specification = 
     {
         module_slots = 0,
@@ -44,8 +44,8 @@ FluidForge.crusherbuilding =
           {
             filename = "__FluidForge__/ImageSource/buildings/crusher.png",
             priority = "high",
-            width = 128,
-            height = 128,
+            width = 187,
+            height = 128*2+20,
             line_length = 4,
             frame_count = 4,
             animation_speed = 0.5,
@@ -54,8 +54,8 @@ FluidForge.crusherbuilding =
           {
           filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
           priority = "high",
-          width = 128,
-          height = 128,
+          width = 187,
+          height = 128*2+20,
           repeat_count = 4,
           animation_speed = 0.5,
           draw_as_shadow = true,
