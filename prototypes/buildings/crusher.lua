@@ -24,9 +24,9 @@ FluidForge.crusherbuilding =
     fast_replaceable_group = "crusher",
     max_health = 300,
     dying_explosion = "medium-explosion",
-    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
-    selection_box = { { -1, -1 }, { 1, 1 } },
-    drawing_box = { { -1, -1.55 }, { 1, 1 } },
+    collision_box = { { -0, -0 }, { 0, 0 } },
+    selection_box = { { -0, -0 }, { 0, 0 } },
+    drawing_box = { { -0, -0 }, { 0, 0 } },
     module_specification = 
     {
         module_slots = 0,
