@@ -4,18 +4,21 @@
 
 -- Recipe Ingredient tables
 -- This is where the tables for the recipes are created and organised
-local niter_crushing_ingredients = {{ type = "item", name = "stone", amount = 5 },}
+local stone_crushing_ingredients = {{ type = "item", name = "stone", amount = 5 },}
+local crusher_ingredients = {{ type = "item", name = "iron-plate", amount = 200 }, { type = "item", name = "copper-plate", amount = 200 }}
 
 
 -- Recipe Result tables
 -- This is where the result tables for the recipes are created and organised
-local niter_crushing_results = {{ type = "item", name = "niter", amount = 5 },}
+local stone_crushing_results = {{ type = "item", name = "stone_dust", amount = 5 },}
+local crusher_results = {{ type = "item", name = "crusher", amount = 1 },}
 
 
 -- Init items 
 -- In this section all the recipe Category prototypes are created and added to the FluidForge.items table for later indexing.
 -- Refer to prototypes.items.item_constructor for details on how to use this function
-FluidForge.items.niter = item_constructor("niter", 20, 64, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/niter.png")
+FluidForge.items.stone_dust = item_constructor("stone_dust", 20, 64, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/stone_dust.png", nil)
+FluidForge.items.crusheritem = item_constructor("crusher", 10, 128, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/crusher.png", "crusher")
 
 
 -- Init Recipe Category
@@ -27,12 +30,19 @@ FluidForge.recipe_category.crushed = recipe_category("crushed", "b-a")
 -- Init recipe
 -- In this section all the recipe prototypes are created and added to the FluidForge.recipes table for later indexing. This makes use of the prototypes.recipes.recipe_constructor which the hold the functions
 -- Refer to prototypes.recipes.recipe_constructor for details on how to use this function
-FluidForge.recipes.niter = recipe_prototype("Niter Crushing", "crushed", "sarah-products", true, 30, niter_crushing_ingredients, niter_crushing_results, "niter", 32)
+FluidForge.recipes.stone_dust = recipe_prototype("Stone Crushing", "crushed", "sarah-products", true, 30, stone_crushing_ingredients, stone_crushing_results, "stone_dust", 32)
+FluidForge.recipes.crusher = recipe_prototype("Crusher 1", "basic-crafting", "sarah-products", true, 30, crusher_ingredients, crusher_results, "crusher", 128)
 
 
 -- Loop over the table FluidForge.items and add it to the game
 for k, v in pairs(FluidForge.items) do
     data:extend{FluidForge.items[k]}
+end
+
+
+-- Loop over the table FluidForge.items and add it to the game
+for k, v in pairs(FluidForge.buildings) do
+    data:extend{FluidForge.buildings[k]}
 end
 
 

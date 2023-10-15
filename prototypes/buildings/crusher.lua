@@ -1,20 +1,6 @@
 -- This is the prototype file for the building crusher
--- Create the crusher object in the table FluidForge.items, this table will be used to append to the main process using data:extend 
-FluidForge.crusheritem = 
-{
-    name = "crusher", -- Name of the item
-    type = "item", -- Type of the item
-    stack_size=20, -- Stack size of the item
-    icon_size=128, -- This relates to the size expected by the game for the icon you provide, it is always a square by default so 64 is 64x64 
-                  -- and the game will not load with a differnt icon size to the acutal size of the icon.
-    tint = {r = 0.34, g = 0.9, b = 0.81}, -- This is the tint that is applied to the item when in the world
-    icon = "__FluidForge__/ImageSource/items/crusher.png", -- This is the file path to the sprite of the icon, __modId__ relates to the root mod folder.
-    subgroup = "sarah-products",
-    place_result = "crusher",
-}
-
 -- Create the crusher table in the table FluidForge.buildings, this table will be used to append to the main process using data:extend 
-FluidForge.crusherbuilding = 
+FluidForge.buildings.crusherbuilding = 
 {
     name = "crusher",
     type= "assembling-machine",
@@ -71,12 +57,3 @@ FluidForge.crusherbuilding =
         apparent_volume = 2.5,
     }
 }
-
-local recipe = table.deepcopy(data.raw["recipe"]["heavy-armor"]) -- Copy the recipe table so I do not have to make the defaults
-    recipe.enabled = true -- governs when the recipe is enabled or not
-    recipe.name = "crusher" -- name of the recipe
-     recipe.ingredients = {{"copper-plate",200},{"steel-plate",50}} -- What the recipe costs
-    recipe.result = "crusher" -- This returns the item id of the item the recipe is to make
-
-
-data:extend{FluidForge.crusheritem, FluidForge.crusherbuilding, recipe}
