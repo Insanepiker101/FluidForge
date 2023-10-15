@@ -7,7 +7,7 @@ FluidForge.buildings.crusherbuilding =
     icon = "__FluidForge__/ImageSource/items/crusher.png", -- This refers to the icon in the...
     icon_size = 128, -- This is the icon size remember it is always a square this icon size is I.e; 128x128. And will crash if the image linked is differnt sized then this
 
-    crafting_categories = {"crushed"}, -- This is the crafting_categories that the building works with,
+    crafting_categories = {"crushing"}, -- This is the crafting_categories that the building works with,
                                       -- I.e; "crushed" is a custom crafting_categories that only contrains the crusher 
                                       -- and such only the crusher will have access to any recipes that are inserted into the tabl
     flags = { "placeable-neutral", "player-creation" }, -- The flags Determines the default force when placing entities in the map editor and using the AUTO option for the force.
@@ -19,9 +19,9 @@ FluidForge.buildings.crusherbuilding =
     crafting_speed = 1, -- This is the global crafting speed for the building
     dying_explosion = "medium-explosion", -- This defines the size of the dying_explosion
 
-    collision_box = { { -2, -3 }, { 2, 3 } }, -- Specification of the entity collision boundaries. 
-    selection_box = { { -2, -3 }, { 2, 3 } }, -- Specification of the entity selection area.
-    drawing_box = { { -2, -3 }, { 2, 3 } }, -- Specification of space needed to see the whole entity. 
+    collision_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of the entity collision boundaries. 
+    selection_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of the entity selection area.
+    drawing_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of space needed to see the whole entity. 
 
     module_specification = -- The number of module slots in this machine, and their icon positions.
     {

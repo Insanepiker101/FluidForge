@@ -17,20 +17,20 @@ local crusher_results = {{ type = "item", name = "crusher", amount = 1 },}
 -- Init items 
 -- In this section all the recipe Category prototypes are created and added to the FluidForge.items table for later indexing.
 -- Refer to prototypes.items.item_constructor for details on how to use this function
-FluidForge.items.stone_dust = item_constructor("stone_dust", 20, 64, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/stone_dust.png", nil)
+FluidForge.items.stone_dust = item_constructor("stone_dust", 200, 64, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/stone_dust.png", nil)
 FluidForge.items.crusheritem = item_constructor("crusher", 10, 128, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/crusher.png", "crusher")
 
 
 -- Init Recipe Category
 -- In this section all the recipe Category prototypes are created and added to the FluidForge.recipe_category table for later indexing. This makes use of the prototypes.recipes.recipe_constructor which the hold the functions
 -- Refer to prototypes.recipes.recipe_constructor for details on how to use this function
-FluidForge.recipe_category.crushed = recipe_category("crushed", "b-a")
+FluidForge.recipe_category.crushed = recipe_category("crushing", "b-a")
 
 
 -- Init recipe
 -- In this section all the recipe prototypes are created and added to the FluidForge.recipes table for later indexing. This makes use of the prototypes.recipes.recipe_constructor which the hold the functions
 -- Refer to prototypes.recipes.recipe_constructor for details on how to use this function
-FluidForge.recipes.stone_dust = recipe_prototype("Stone Crushing", "crushed", "sarah-products", true, 30, stone_crushing_ingredients, stone_crushing_results, "stone_dust", 32)
+FluidForge.recipes.stone_dust = recipe_prototype("Stone Crushing", "crushing", "sarah-products", true, 30, stone_crushing_ingredients, stone_crushing_results, "stone_dust", 32)
 FluidForge.recipes.crusher = recipe_prototype("Crusher 1", "basic-crafting", "sarah-products", true, 30, crusher_ingredients, crusher_results, "crusher", 128)
 
 
