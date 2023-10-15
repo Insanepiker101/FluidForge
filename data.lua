@@ -1,10 +1,18 @@
 --data.lua
+
+-- I cannot remember why I added the if statment part tbh
 if not FluidForge then
     FluidForge = {}
 end
+
+-- This is the main tables of the things included in the FluidForge mod
 FluidForge.items = {}
 FluidForge.buildings = {}
 FluidForge.recipes = {}
+FluidForge.recipe_category = {}
+
+
+-- ToDo Remove this and add constructor for it
 data:extend({
     {
       type = "item-subgroup",
@@ -17,11 +25,16 @@ data:extend({
       name = "water",
     },
   })
-  
 
 
-require("item")
-require("prototypes.items.niter")
+-- Item require
+require("prototypes.items.item_constructor")
+
+-- Building require
 require("prototypes.buildings.crusher")
-require("prototypes.recipes.niter-recipe")
+
+-- Recipe require
+require("prototypes.recipes.recipe_constructor")
+
+-- Init require
 require("prototype_init")

@@ -1,5 +1,5 @@
--- This is the prototype file for the item niter
--- Create the crusher object in the table FluidForge, this object will be used to append to the main process using data:extend 
+-- This is the prototype file for the building crusher
+-- Create the crusher object in the table FluidForge.items, this table will be used to append to the main process using data:extend 
 FluidForge.crusheritem = 
 {
     name = "crusher", -- Name of the item
@@ -12,13 +12,15 @@ FluidForge.crusheritem =
     subgroup = "sarah-products",
     place_result = "crusher",
 }
+
+-- Create the crusher table in the table FluidForge.buildings, this table will be used to append to the main process using data:extend 
 FluidForge.crusherbuilding = 
 {
     name = "crusher",
     type= "assembling-machine",
     icon = "__FluidForge__/ImageSource/items/crusher.png",
     icon_size = 128,
-    crafting_categories = {"basic-crafting"},
+    crafting_categories = {"crushed"},
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 1, result = "crusher" },
     fast_replaceable_group = "crusher",
@@ -48,8 +50,7 @@ FluidForge.crusherbuilding =
             height = 128*2+20,
             line_length = 4,
             frame_count = 4,
-            animation_speed = 0.5,
-            shift = util.by_pixel(0, -10),
+            animation_speed = 0.1,
           },
           {
           filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
@@ -57,9 +58,8 @@ FluidForge.crusherbuilding =
           width = 187,
           height = 128*2+20,
           repeat_count = 4,
-          animation_speed = 0.5,
+          animation_speed = 0.1,
           draw_as_shadow = true,
-          shift = util.by_pixel(13.5, 9.5),
           },
         }
     },

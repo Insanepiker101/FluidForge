@@ -25,21 +25,13 @@ return {
 }
 end
 
---{
---    type = "recipe",
---    name = "Niter Crushing",
---    category = "advanced-crafting",
---    subgroup = "sarah-products",
---    enabled = true,
---    energy_required = 30,
---    ingredients = {
---      { type = "item", name = "stone", amount = 5 },
---    },
---    results = {
---      { type = "item", name = "niter", amount = 10 },
---    },
---    always_show_products = true,
---    main_product = "niter",
---    icon_size = 32,
---  }
---
+function recipe_category(func_name -- Name of the recipe category
+    , func_order -- order of the category
+)
+return  
+{
+    type = "recipe-category",
+    name = func_name,
+    order = func_order,
+}
+end
