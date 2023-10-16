@@ -1,9 +1,6 @@
 --data.lua
 
--- I cannot remember why I added the if statment part tbh
-if not FluidForge then
-    FluidForge = {}
-end
+FluidForge = {}
 
 -- This is the main tables of the things included in the FluidForge mod
 FluidForge.items = {}
