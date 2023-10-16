@@ -55,8 +55,8 @@ FluidForge.buildings.crusherbuilding =
           filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png", -- The path to the sprite file to use
           priority = "high",
           width = 187, -- Mandatory if size is not defined. This is the size of the image
-          height = 128*2+20,  -- Specifies how many pictures are on each horizontal line in the image file. 
-          repeat_count = 4, 
+          height = 128*2+20,   
+          repeat_count = 4, -- Specifies how many pictures are on each horizontal line in the image file.
           animation_speed = 0.1, -- Modifier of the animation playing speed, the default of 1 means one animation frame per tick (60 fps). 
           draw_as_shadow = true, -- idk what this does but it makes it work so okay
         },

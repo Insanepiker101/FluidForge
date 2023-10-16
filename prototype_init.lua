@@ -3,7 +3,7 @@
 
 
 -- Recipe Ingredient tables
--- This is where the tables for the recipes are created and organised
+-- This is where the Ingredient tables for the recipes are created and organised
 local stone_crushing_ingredients = {{ type = "item", name = "stone", amount = 10 },}
 local iron_ore_crushing_ingredients = {{ type = "item", name = "iron-ore", amount = 10 },}
 local iron_ore_dust_smelting_ingredients = {{ type = "item", name = "iron_ore_dust", amount = 1 },}
@@ -42,24 +42,24 @@ FluidForge.recipes.crusher = recipe_prototype("Crusher 1", "basic-crafting", "sa
 
 
 -- Loop over the table FluidForge.items and add it to the game
-for k, v in pairs(FluidForge.items) do
-    data:extend{FluidForge.items[k]}
+for key, value in pairs(FluidForge.items) do
+    data:extend{FluidForge.items[key]}
 end
 
 
 -- Loop over the table FluidForge.items and add it to the game
-for k, v in pairs(FluidForge.buildings) do
-    data:extend{FluidForge.buildings[k]}
+for key, value in pairs(FluidForge.buildings) do
+    data:extend{FluidForge.buildings[key]}
 end
 
 
 -- Loop over the table FluidForge.recipe_category and add it to the game
-for k, v in pairs(FluidForge.recipe_category) do
-    data:extend{FluidForge.recipe_category[k]}
+for key, value in pairs(FluidForge.recipe_category) do
+    data:extend{FluidForge.recipe_category[key]}
 end
 
 
 -- Loop over the table FluidForge.recipes and add it to the game
-for k, v in pairs(FluidForge.recipes) do
-    data:extend{FluidForge.recipes[k]}
+for key, value in pairs(FluidForge.recipes) do
+    data:extend{FluidForge.recipes[key]}
 end
