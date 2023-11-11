@@ -19,8 +19,8 @@ FluidForge.buildings.crusherbuilding =
     crafting_speed = 1, -- This is the global crafting speed for the building
     dying_explosion = "medium-explosion", -- This defines the size of the dying_explosion
 
-    collision_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of the entity collision boundaries. 
-    selection_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of the entity selection area.
+    collision_box = { { -2, -2 }, { 2, 3 } }, -- Specification of the entity collision boundaries. 
+    selection_box = { { -2, -2 }, { 2, 3 } }, -- Specification of the entity selection area.
     drawing_box = { { -2, -3 }, { 2, 3.5 } }, -- Specification of space needed to see the whole entity. 
 
     module_specification = -- The number of module slots in this machine, and their icon positions.
