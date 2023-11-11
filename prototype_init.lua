@@ -4,9 +4,9 @@
 
 -- Recipe Ingredient tables
 -- This is where the Ingredient tables for the recipes are created and organised
-local stone_crushing_ingredients = {{ type = "item", name = "stone", amount = 10 },}
-local iron_ore_crushing_ingredients = {{ type = "item", name = "iron-ore", amount = 10 },}
-local iron_ore_dust_smelting_ingredients = {{ type = "item", name = "iron_ore_dust", amount = 1 },}
+local stone_crushing_ingredients = {{ type = "item", name = "stone", amount = 10 }}
+local iron_ore_crushing_ingredients = {{ type = "item", name = "iron-ore", amount = 10 }}
+local iron_ore_dust_smelting_ingredients = {{ type = "item", name = "iron_ore_dust", amount = 1 }}
 local crusher_ingredients = {{ type = "item", name = "iron-plate", amount = 200 }, { type = "item", name = "copper-plate", amount = 200 }}
 
 
