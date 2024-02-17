@@ -26,6 +26,7 @@ data:extend({
 
 -- Item require
 require("prototypes.items.item_constructor")
+require("prototypes.items.item_fuel_constructor")
 
 -- Building require
 require("prototypes.buildings.crusher")

@@ -1,6 +1,3 @@
--- This is the prototype file for the function to make recipe prototypes
--- Create the crusher object in the table FluidForge, this object will be used to append to the main process using data:extend 
-
 
 -- Recipe Ingredient tables
 -- This is where the Ingredient tables for the recipes are created and organised
@@ -51,7 +48,7 @@ FluidForge.recipe_category.burning = recipe_category("burning", "b-a")
 -- Refer to prototypes.recipes.recipe_constructor for details on how to use this function
 FluidForge.recipes.stone_dust = recipe_prototype("Stone Crushing", "crushing", "sarah-products", true, 30, stone_crushing_ingredients, stone_crushing_results, "stone_dust", 32)
 FluidForge.recipes.coal_ore_dust = recipe_prototype("Coal Crushing", "crushing", "sarah-products", true, 10, coal_ore_crushing_ingredients, coal_ore_crushing_results, "coal_ore_dust", 32)
-FluidForge.recipes.iron_ore_dust_smelting = recipe_prototype("Coal Ore Coking", "smelting", "sarah-products", true, 1, coal_ore_smelting_ingredients, coal_ore_smelting_results, "coke_dust", 32)
+FluidForge.recipes.coal_ore_dust_smelting = recipe_prototype("Coal Ore Coking", "smelting", "sarah-products", true, 1, coal_ore_smelting_ingredients, coal_ore_smelting_results, "coke_dust", 32)
 FluidForge.recipes.iron_ore_dust = recipe_prototype("Iron Ore Crushing", "crushing", "sarah-products", true, 10, iron_ore_crushing_ingredients, iron_ore_crushing_results, "iron_ore_dust", 32)
 FluidForge.recipes.iron_ore_dust_smelting = recipe_prototype("Iron Ore Smelting", "smelting", "sarah-products", true, 1, iron_ore_dust_smelting_ingredients, iron_ore_dust_smelting_results, "iron-plate", 32)
 FluidForge.recipes.copper_ore_dust = recipe_prototype("Copper Ore Crushing", "crushing", "sarah-products", true, 10, copper_ore_crushing_ingredients, copper_ore_crushing_results, "copper_ore_dust", 32)
