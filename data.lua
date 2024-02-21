@@ -35,4 +35,6 @@ require("prototypes.buildings.crusher")
 require("prototypes.recipes.recipe_constructor")
 
 -- Init require
+require("factories.item_factory")
+require("factories.recipe_factory")
 require("prototype_init")
