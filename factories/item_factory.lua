@@ -7,3 +7,4 @@ FluidForge.items.coke_dust = item_fuel_constructor("coke_dust", 200, 64, "__Flui
 FluidForge.items.iron_ore_dust = item_constructor("iron_ore_dust", 200, 64, {r = 0, g = 0, b = 1, a=0.3}, "__FluidForge__/ImageSource/items/iron_ore_dust.png", nil)
 FluidForge.items.copper_ore_dust = item_constructor("copper_ore_dust", 200, 64, {r = 0, g = 0, b = 1, a=0.3}, "__FluidForge__/ImageSource/items/copper_ore_dust.png", nil)
 FluidForge.items.crusheritem = item_constructor("crusher", 10, 128, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/crusher.png", "crusher")
+FluidForge.items.oilgenitem = item_constructor("oilgen", 10, 128, {r = 0.34, g = 0.9, b = 0.81}, "__FluidForge__/ImageSource/items/crusher.png", "oilgen")

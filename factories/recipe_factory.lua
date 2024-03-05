@@ -20,7 +20,7 @@ local coal_ore_smelting_ingredients = {{ type = "item", name = "coal_ore_dust", 
 local iron_ore_dust_smelting_ingredients = {{ type = "item", name = "iron_ore_dust", amount = dust_output }}
 local copper_ore_dust_smelting_ingredients = {{ type = "item", name = "copper_ore_dust", amount = dust_output }}
 local crusher_ingredients = {{ type = "item", name = "iron-plate", amount = 200 }, { type = "item", name = "copper-plate", amount = 200 }}
-
+local oilgen_ingredients = {{ type = "item", name = "iron-plate", amount = 200 }, { type = "item", name = "copper-plate", amount = 200 }}
 
 -- Recipe Result tables
 -- This is where the result tables for the recipes are created and organised
@@ -38,7 +38,7 @@ local copper_ore_dust_smelting_results = {{ type = "item", name = "copper-plate"
 
 -- Crusher Results
 local crusher_results = {{ type = "item", name = "crusher", amount = 1 }}
-
+local oilgen_results = {{ type = "item", name = "oilgen", amount = 1 }}
 
 -- Init recipe
 -- In this section all the recipe prototypes are created and added to the FluidForge.recipes table for later indexing. This makes use of the prototypes.recipes.recipe_constructor which the holds the functions
@@ -51,3 +51,4 @@ FluidForge.recipes.iron_ore_dust_smelting = recipe_prototype("Iron Ore Smelting"
 FluidForge.recipes.copper_ore_dust = recipe_prototype("Copper Ore Crushing", "crushing", "sarah-products", true, 10, copper_ore_crushing_ingredients, copper_ore_crushing_results, "copper_ore_dust", 32)
 FluidForge.recipes.copper_ore_dust_smelting = recipe_prototype("Iron Ore Smelting", "smelting", "sarah-products", true, 1, copper_ore_dust_smelting_ingredients, copper_ore_dust_smelting_results, "copper-plate", 32)
 FluidForge.recipes.crusher = recipe_prototype("Crusher 1", "basic-crafting", "sarah-products", true, 30, crusher_ingredients, crusher_results, "crusher", 128)
+FluidForge.recipes.oilgen = recipe_prototype("oilgen-1", "basic-crafting", "sarah-products", true, 30, oilgen_ingredients, oilgen_results, "oilgen", 128)

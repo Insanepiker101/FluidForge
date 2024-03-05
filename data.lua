@@ -30,6 +30,8 @@ require("prototypes.items.item_fuel_constructor")
 
 -- Building require
 require("prototypes.buildings.crusher")
+require("prototypes.buildings.oilgenerator")
+
 
 -- Recipe require
 require("prototypes.recipes.recipe_constructor")
